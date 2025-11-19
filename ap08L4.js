@@ -56,7 +56,7 @@ export function init(scene, size, id, offset, texture) {
             return (new THREE.Vector3()).set(
                 offset.x + p[0],
                 0,
-                offset.z = p[1]
+                offset.z + p[1]
             );
         }), false
     )
