@@ -58,7 +58,7 @@ export function init(scene, size, id, offset, texture) {
         const topUvS = (type*2+2)/11;
         const topUvE = (type*2+3)/11;
         const uvs = geometry.getAttribute("uv");
-        for( let i= 0;i<48;i++){
+        for( let i= 0;i<48;i+=4){
             if(i < 16||i>22){
                 uvs.array[i] = sideUvS;
                 uvs.array[i+2] = sideUvE;
